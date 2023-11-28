@@ -2,12 +2,24 @@
 
 @import url('../fonts/Typewriter-Serial-Regular.css');
 
+:root {
+    --naranja: #F0822F;
+    --verde: #1BB3AB;
+    --morado: #AD2F89;
+    --blanco: #fff;
+}
+
 body {
     font-family: 'Montserrat', sans-serif !important;
 }
 
 .navbar {
     padding: 5px 150px;
+    background-color: var(--naranja) !important;
+}
+
+.nav-link {
+    color: var(--blanco) !important;
 }
 
 #logo {
@@ -15,9 +27,61 @@ body {
 }
 
 #hero_img {
-    width: 300px;
+    width: 550px;
 }
 
-p {
-    font-family: 'Typewriter-Serial-Regular', sans-serif;
+#hero {
+    background-image: url(../images/fondo.png);
+    background-position: center center;
+    background-size: cover;
 }
+
+
+.hero-title {
+    color: var(--morado);
+    font-family: 'Typewriter-Serial-Regular', sans-serif;
+    font-weight: bold;
+}
+
+.hero-text {
+    background-color: #ffffff98;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.cursos_title {
+    font-family: 'Typewriter-Serial-Regular', sans-serif;
+    font-weight: bold;
+    color: var(--verde);
+    letter-spacing: 3px;
+}
+
+@media (max-width: 576px) {
+
+    .navbar {
+        padding: 5px 5px;
+    }
+
+    #hero_img {
+        width: 400px;
+        margin-top: 1rem;
+    }
+
+    #hero {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.cursos-verMas {
+    padding: 5px 10px;
+    background-color: var(--morado);
+    color: var(--blanco);
+    text-decoration: none;
+
+}
+
+
+
